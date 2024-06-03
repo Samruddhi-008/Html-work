@@ -1,0 +1,90 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+.container {  
+    padding: 50px;  
+  background-color: rgba(2, 89, 60, 0.916);  
+}  
+   input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline;  
+  border-bottom:rgb(163, 198, 163);  
+  
+}  
+h1{
+    color: rgb(84, 176, 84);
+}
+h3{
+    color: rgb(219, 247, 219);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+label {
+    color: rgb(219, 247, 219);
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p{
+  color: rgb(147, 200, 147);
+  font-size: 14px;
+}
+ div {  
+       padding: 10px 0;  
+         }  
+.registerbtn {  
+  background-color: rgb(251, 200, 173);  
+  color: white;  
+  font-size: 18px;
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}    
+</style>  
+</head>  
+<body>  
+<form>  
+  <div class="container">  
+  <h1>Make a reservation </h1>
+  <h3>Your details</h3>
+  <label> Name*</label>   
+<input type="text" name="Name" placeholder= "" size="15"  required />   
+<label> Email* </label>   
+<input type="text" name="email" placeholder="" size="15" required />   
+<label> Phone* </label> 
+<p>Please include your area code</p>   
+<input type="text" name="phone" placeholder="" size="15"required />  
+<label>Your preferences</label>  
+<br>
+<br>
+<br>
+<div>  
+  <label> Date*</label>   
+  <p>We take reservation up to one year in advance</p>
+<input type="date" name="date" placeholder= "" size="15"  required />
+</div>
+<div>
+<label> Time*</label>   
+<p>Our last service is at 9pm</p>
+<input type="time" name="time" placeholder= "" size="15"  required />
+</div> 
+<div>
+  <label> Party*</label>   
+<input type="text" name="party" placeholder= "" size="15"  required />   
+</div>
+<div>
+  <label> Any additional information*</label>   
+  <p>Dietary requests, special occasion, etc.</p>
+  <input type="text" name="extra" placeholder= "" size="15"  required />
+  </div>
+  <button type="submit" class="registerbtn">Make Reservation</button> 
+</div>  
+ 
+</form>  
+</body>  
+</html>  

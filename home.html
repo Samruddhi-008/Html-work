@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="singin.html" method="GET" enctype="multipart/form-data">
+        <div>
+           <label for="username">Username</label>
+           <input type="text" placeholder="enter your name" name="username" id="username">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required maxlength="8">
+        </div>
+        <div>
+            <label for="yearofbirth">year of birth</label>
+            <input type="number" name="yearofbirth" id="yearofbirth" maxlength="4" min="1990" step="1">
+        </div> 
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="about">About me..</label>
+            <textarea name="about" id="about" cols="30" rows="10">About me</textarea>
+        </div>
+        <div>
+            <label for="sms alert">sms alert</label>
+            <input type="checkbox" name="sms alert" id="sms alert">
+        </div>
+        <div>
+            <label for="email alert">email alert</label>
+            <input type="checkbox" name="email alert" id="email alert">
+        </div>
+        <div>
+            <input type="radio" name="Gender" id="Male">
+            <label for="Male">Male</label>
+            <input type="radio" name="Gender" id="Female">
+            <label for="Female">female</label>
+        </div>
+        <div>
+            <select name="state" id="state">
+                <option value="tamilnadu">Tamilnadu</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="gujrat">gujrat</option>
+                <option value="goa">Goa</option>
+ 
+           </select>
+        </div>
+        <div>
+            <label for="file">Upload Resume</label>
+            <input type="file" id="file" name="file">
+        </div>
+        <div>
+            <audio src="" controls loop
+            preload="auto">my songs
+            <source src="">
+            <source src="">
+        </audio>
+        <video controls height="300px" width="240px" muted>
+            <source src="" type="video/mp4">
+            <p>Video not supported</p>
+        </video>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bSAlE_WgHxY?si=FlcvoYMa2sVFeSg-"
+         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </div>
+             <input type="image" src="button.jpg" width="100px">
+            <button type="reset">reset</button>
+        
+    </form>
+</body>
+</html>

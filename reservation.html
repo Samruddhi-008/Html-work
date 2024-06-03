@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <style>
+         body {
+           background-image:url(holi.jpg);
+           background-size: cover;
+        }
+       h1{
+        font-size: 40px;
+        color: rgb(251, 230, 230);
+       }
+       h2{
+        font-size: 50px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgba(47, 10, 233, 0.956);
+        
+       }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Happy Holi</h1>
+        <h2>MAKE A RESERVATION</h2>
+        <h3>"We would be glad to reserve a table for you a place for you!!"</h3>
+        <form action="singin.html" method="GET" enctype="multipart/form-data">
+            <table>
+              <tr>
+                <td><label for="full name">Full Name*</label></td>
+                <td><input type="text" id="full name" placeholder=""></td>
+              </tr>
+              <tr>
+                <td><label for="phone">Contact No.</label></td>
+                <td><input type="tel" id="phone" placeholder="[000] 000-0000"></td>
+              </tr>
+                <tr>
+                  <td><label for="email">E-mail*</label></td>
+                  <td><input type="text" id="email" placeholder="Enter your mail id"></td>
+                </tr>
+                <tr>
+                  <td>Gender:</td>
+                  <td><input type="radio" name="Gender">Male
+                      <input type="radio" name="Gender">Female
+                  </td>
+              </tr>
+              <tr>
+                <td><label for="attendees">Number of Attendees</label></td>
+                <td><select name="attendees" id="attendees">
+                  <option value="select">select</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+             </select></td>
+              </tr>
+              <tr>
+                <td><label for="dateofbirth">Date of Birth</label></td>
+                <td> <input type="date" name="date" id="date"></td>
+              </tr>
+              <tr>
+                <td><label for="comments">Comments/ Additional Requests</label>
+                   <td> <textarea name="about" id="about" cols="30" rows="10"></textarea></td>
+              </tr>
+              <tr>
+                <td>Select a Payment Method</td>
+                <td><input type="radio" name="Payment">Manual/offline
+                    <input type="radio" name="Payment">Paypal
+                </td>
+            </tr>
+              </table>
+              <td><input type="image" src="submit.png" width="100px"></td>
+        </form>
+    </center>
+</body>
+</html>
